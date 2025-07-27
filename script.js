@@ -56,7 +56,8 @@ function unlockSurprise() {
   // 🎉 Email notification
   emailjs.send("service_3fua1iy", "template_1l5oewa", {
     to_name: "Kushal",
-    message: "🎉 Happy Birthday Kushal! Your surprise card is open!,Click the link now 😏",
+    message: "🎉 Happy Birthday Kushal! Your surprise card is open!,Click the link now 😏
+      https://splendorous-beijinho-74ab3e.netlify.app/",
     to_email: "kushal01krish@gmail.com"
   });
 
