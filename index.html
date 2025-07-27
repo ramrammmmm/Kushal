@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Kushal!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>emailjs.init("iLlYXboOV0uKb87Uj");</script>
+</head>
+<body>
+
+  <div id="notify-box" class="notify-box">
+    <p>🎁 Want a surprise alert at midnight?</p>
+    <button onclick="requestNotification()">Yes, notify me!</button>
+  </div>
+
+  <div id="countdown-screen" class="screen">
+    <h2 class="subtitle">Surprise Unlocks In</h2>
+    <div id="countdown" class="countdown">Loading...</div>
+  </div>
+
+  <div id="birthday-card" class="hidden">
+    <div class="overlay">
+      <div class="card-content">
+<h1 class="birthday-text glow-text">Wishing You the Best Day Ever, Kushal 💜</h1>    </div>
+    </div>
+    <img src="friend.jpg" alt="Kushal" class="bg-photo">
+    <button onclick="document.getElementById('bg-music').play().catch(()=>alert('🔊 Tap screen first to play music'))" class="music-button">🎵 Play Music</button>
+    <canvas id="fireworks"></canvas>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
